@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekha Garigapati - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #00ff00;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #0a0a0a;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        nav {
+            background-color: #0a0a0a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        footer {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0 0 rgba(0, 255, 0, 0.75), 0 0 0.05em rgba(0, 0, 255, 0.75);
+            }
+            14% {
+                text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em 0 0 rgba(0, 255, 0, 0.75), 0 0 0.05em rgba(0, 0, 255, 0.75);
+            }
+            15% {
+                text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 0 0.05em rgba(0, 0, 255, 0.75);
+            }
+            19% {
+                text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 0 0.05em rgba(0, 0, 255, 0.75);
+            }
+            20% {
+                text-shadow: 0.05em 0 0 rgba(00, 0, 0, 0.75);
+            }
+            21% {
+                text-shadow: 0.05em 0 0 rgba(00, 0, 0, 0.75);
+            }
+            24% {
+                text-shadow: 0.05em 0 0 rgba(00, 0, 0, 0.75);
+            }
+            25% {
+                text-shadow: -0.05em 0 0 rgba(00, 0, 0, 0.75);
+            }
+            29% {
+                text-shadow: -0.05em 0 0 rgba(00, 0, 0, 0.75);
+            }
+            30% {
+                text-shadow: 0.05em 0 0 rgba(00, 0, 0, 0.75), -0.05em 0 0 rgba(00, 0, 0, 0.75), 0 0 0.05em rgba(00, 0, 0, 0.75);
+            }
+            35% {
+                text-shadow: 0.05em 0 0 rgba(00, 0, 0, 0.75), -0.05em 0 0 rgba(00, 0, 0, 0.75), 0 0 0.05em rgba(00, 0, 0, 0.75);
+            }
+            36% {
+                text-shadow: none;
+            }
+            100% {
+                text-shadow: none;
+            }
+        }
+
+        h1, h2, h3 {
+            animation: glitch 5s infinite;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .project-card {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .project-card h3 {
+            color: #00ff00;
+        }
+
+        .project-card p {
+            color: #fff;
+        }
+
+        .project-card a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            color: #fff;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #0a0a0a;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            color: brown;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rekha Garigapati</h1>
+            <p>Web Developer | Designer | Cybersecurity Enthusiast</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#knowledge">knowledge sharing</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Rekha Garigapati, a passionate web developer, designer, and cybersecurity enthusiast. With over 5 years of experience in the industry, I specialize in creating secure, responsive, and user-friendly websites using modern technologies. My goal is to deliver high-quality solutions that meet the needs of my clients and enhance their online presence.</p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="project-card">
+                <h3>Lead Web Developer, CyberTech Inc.</h3>
+                <p>Developed and maintained secure web applications for various clients, ensuring compliance with industry standards and best practices.</p>
+            </div>
+            <div class="project-card">
+                <h3>Frontend Developer, DesignWorks</h3>
+                <p>Worked closely with designers to create visually appealing and responsive user interfaces for websites and web applications.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="project-card">
+                <h3>Project 1: Cybersecurity Training Platform</h3>
+                <p>A web-based platform for cybersecurity professionals to access training materials, virtual labs, and interactive challenges.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: E-commerce Website with Secure Payment Gateway</h3>
+                <p>An online store for a fashion brand, featuring a sleek design, secure payment gateway, and an intuitive user interface.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Responsive Design</li>
+            <li>Web Development</li>
+            <li>Cybersecurity Awareness</li>
+        </ul>
+    </section>
+    <section id="timeline">
+        <div class="container">
+            <h1>Project Timeline</h1>
+            <h2></h2>
+            <table>
+                <tr>
+                    <th>Task</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Estimated Duration</th>
+                </tr>
+                <tr>
+                    <td>Create design concepts</td>
+                    <td>April 8</td>
+                    <td>April 11</td>
+                    <td>4 days</td>
+                </tr>
+                <tr>
+                    <td>Write engaging content</td>
+                    <td>April 12</td>
+                    <td>April 15</td>
+                    <td>4 days</td>
+                </tr>
+                <tr>
+                    <td>Develop responsive website</td>
+                    <td>April 16</td>
+                    <td>April 21</td>
+                    <td>6 days</td>
+                </tr>
+                <tr>
+                    <td>Test and debug</td>
+                    <td>April 21</td>
+                    <td>April 23</td>
+                    <td>3 days</td>
+                </tr>
+                <tr>
+                    <td>Collect feedback and iterate</td>
+                    <td>April 24</td>
+                    <td>April 25</td>
+                    <td>2 days</td>
+                </tr>
+                <tr>
+                    <td>Official website launch</td>
+                    <td>April 26</td>
+                    <td>April 28</td>
+                    <td>2 days</td>
+                </tr>
+            </table>
+        </section>
+    <section id="knowledge">
+            <h1>Knowledge Sharing</h1>
+            <h2>Topics</h2>
+            <ul>
+                <li><a href="https://www.skillshare.com/">Skill Enhancement Tutorials</a></li>
+                <li><a href="https://www.themuse.com/advice">Professional Growth Insights</a></li>
+                <li><a href="https://www.forbes.com/business/">Business Strategies</a></li>
+                <li><a href="#">Personal Branding Techniques</a></li>
+                <li><a href="#">Financial Management Guidance</a></li>
+            </ul>
+    
+            <h2>Featured Content</h2>
+            <div>
+                <h3>Skill Enhancement Tutorials</h3>
+                <p>Explore step-by-step tutorials on various skills to elevate your expertise.</p>
+                <p><a href="https://www.udemy.com/course/graphic-design-for-beginners-the-ultimate-guide/">Graphic Design for Beginners: The Ultimate Guide</a></p>
+                <p><a href="https://www.freecodecamp.org/news/the-web-developer-roadmap-2021/">The Web Developer Roadmap 2021</a></p>
+                <p><a href="https://digital-photography-school.com/photography-for-beginners/">Photography for Beginners</a></p>
+            </div>
+    
+            <div>
+                <h3>Professional Growth Insights</h3>
+                <p>Discover practical tips and insights to foster your career growth.</p>
+                <p><a href="https://www.themuse.com/advice/how-to-prepare-for-a-job-interview">How to Prepare for a Job Interview</a></p>
+                <p><a href="https://www.themuse.com/advice/9-time-management-tips-to-help-you-get-through-your-to-do-list">9 Time Management Tips to Help You Get Through Your To-Do List</a></p>
+                <p><a href="https://www.forbes.com/sites/carolinecastrillon/2021/12/09/how-to-network-effectively-even-if-you-hate-networking/?sh=3f2d101c575c">How to Network Effectively Even If You Hate Networking</a></p>
+            </div>
+    
+            <div>
+                <h3>Business Strategies</h3>
+                <p>Stay informed about the latest trends and strategies shaping the business world.</p>
+                <p><a href="https://www.forbes.com/sites/louiscolumbus/2023/12/12/ai-augments-the-future-of-e-commerce/?sh=4cc282a240c1">AI Augments The Future Of E-Commerce</a></p>
+                <p><a href="https://www.forbes.com/sites/forbesbusinesscouncil/2021/12/06/10-digital-marketing-strategies-every-business-should-consider/?sh=45890c476415">10 Digital Marketing Strategies Every Business Should Consider</a></p>
+                <p><a href="https://www.investopedia.com/terms/b/blockchain.asp">Blockchain Technology: A Guide to Blockchain</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: rekha.garigapati@gmail.com</p>
+            <p>Phone: +1 (678) 456-7890</p>
+            <p>GitHub: <a href="https://github.com/rekha-garigapati" target="_blank">https://github.com/rekha-garigapati</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rekha-garigapati" target="_blank">https://www.linkedin.com/in/rekha-garigapati</a></p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rekha Garigapati. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
